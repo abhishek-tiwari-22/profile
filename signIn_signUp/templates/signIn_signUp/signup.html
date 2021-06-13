@@ -1,0 +1,35 @@
+{%load static%}
+<link rel="stylesheet" href="{%static 'signIn_signUp/signup.css'%}" type="text/css"/>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <div class="center">
+        <h1>SIGNUP</h1>
+        <form action="" method="post">
+            {%csrf_token%}
+            <div class="signin">Already a user&nbsp;<a href="/">signin</a></div>
+            <br>
+            <input type="text" name="username" placeholder="USERNAME"><br>
+            <input type="email" name="email" placeholder="EMAIL"><br>
+            <input type="password" name="password1" placeholder="PASSWORD"><br>
+            <input type="password" name="password2" placeholder="Re-Enter PASSWORD"><br>
+            <input type="text" name="address" placeholder="ADDRESS"><br>
+            <input type="submit" value="Sign Up">
+        </form>
+        {% if messages %}
+            <ul class="messages">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(120deg,#796542,#a34747);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center p{
+    text-align: justify;
+    padding: 0 0 0 0;
+}
+
+.center h4{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.signout{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.signout a{
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.signout a:hover{
+    text-decoration: underline;
+}
+
+.edit{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.edit a{
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.edit a:hover{
+    text-decoration: underline;
+}
+
+.delete{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.delete a{
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.delete a:hover{
+    text-decoration: underline;
+}
+
